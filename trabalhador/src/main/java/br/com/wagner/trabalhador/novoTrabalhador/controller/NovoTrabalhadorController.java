@@ -25,7 +25,7 @@ public class NovoTrabalhadorController {
 
     @Autowired
     private TrabalhadorRepository trabalhadorRepository;
-    
+
     // end point / cadastrar um novo trabalhador
 
     @Transactional
