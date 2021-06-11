@@ -36,9 +36,6 @@ public class NovoTrabalhadorControllerTest {
     @Autowired
     private ObjectMapper objectMapper;
 
-    private String nome = "joao";
-    private BigDecimal rendaDiaria = new BigDecimal("20.0");
-
 
     // 1 cenario de teste / caminho feliz
 
