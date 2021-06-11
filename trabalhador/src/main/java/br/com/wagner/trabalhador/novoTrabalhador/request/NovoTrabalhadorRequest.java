@@ -4,6 +4,7 @@ import br.com.wagner.trabalhador.novoTrabalhador.model.Trabalhador;
 import com.fasterxml.jackson.annotation.JsonCreator;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 import java.math.BigDecimal;
 
@@ -15,6 +16,7 @@ public class NovoTrabalhadorRequest {
     private String nome;
 
     @Positive
+    @NotNull
     private BigDecimal rendaDiaria;
 
     // construtor com atributos
