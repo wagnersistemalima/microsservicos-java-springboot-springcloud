@@ -18,7 +18,6 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.util.Optional;
 
-@Validated
 @RestController
 @RequestMapping("/trabalhadores")
 public class DeleteTrabalhadorController {
@@ -27,12 +26,12 @@ public class DeleteTrabalhadorController {
 
     @Autowired
     private TrabalhadorRepository trabalhadorRepository;
-    
+
     // end point para deletar um ttrabalhador
 
     @Transactional
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> delete( @Valid @NotNull @PathVariable("id") Long id) {
+    public ResponseEntity<?> delete( @PathVariable("id") Long id) {
         logger.info("...Iniciando a deleção de um trabalhador");
 
 
