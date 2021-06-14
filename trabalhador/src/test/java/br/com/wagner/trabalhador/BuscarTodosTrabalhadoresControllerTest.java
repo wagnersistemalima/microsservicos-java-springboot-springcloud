@@ -6,6 +6,7 @@ import br.com.wagner.trabalhador.novoTrabalhador.response.BuscarTodosTrabalhadre
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +41,10 @@ public class BuscarTodosTrabalhadoresControllerTest {
     @Autowired
     private ObjectMapper objectMapper;
 
+    @BeforeEach
+    void setUp() {
+        trabalhadorRepository.deleteAll();
+    }
 
     // cenario de teste / caminho feliz
 
@@ -95,6 +100,7 @@ public class BuscarTodosTrabalhadoresControllerTest {
         URI uri = new URI("/trabalhadores");
 
         //ação
+
 
         mockMvc.perform(MockMvcRequestBuilders.get(uri)
                 .contentType(MediaType.APPLICATION_JSON))
