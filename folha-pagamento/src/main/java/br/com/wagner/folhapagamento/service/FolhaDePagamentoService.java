@@ -8,18 +8,28 @@ import feign.FeignException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class FolhaDePagamentoService {
 
     @Autowired
     private ApiFeingTrabalhadoresClient apiFeingTrabalhadoresClient;
 
-    public Pagamento consulta(Long id, Integer dias) {
+    public Optional<Pagamento> consulta(Long id, Integer dias) {
 
-        TrabalhadorResponse response = apiFeingTrabalhadoresClient.findById(id).getBody();
-        
+        TrabalhadorResponse response;
+
+        try {
+            response = apiFeingTrabalhadoresClient.findById(id).getBody();
+        }
+        catch (Exception e) {
+            return  Optional.empty();                 // retorna nulo
+        }
+
         Pagamento pagamento = new Pagamento(response.getId(), response.getNome(), response.getRendaDiaria(), dias);
-        return  pagamento;
+
+        return  Optional.of(pagamento);
 
     }
 
