@@ -2,6 +2,10 @@
 # microsserviço-java-springBoot-springCloud
 🔨 🔧... sistema composto por vários microsserviços que comunicam entre si de forma transparente, escalável e com balanceamento de carga, com autenticação e autorização, usando OAuth e tokens JWT. 
 
+## Estrutura:
+
+![alt text](https://github.com/wagnersistemalima/microsservicos-java-springboot-springcloud/blob/main/images/imagemMicrosservico.png)
+
 ## Visão do projeto:
 
 * Montar a estrutura do projeto, a comunicação entre os microsserviços, a configuração automatica, escala automatica e balanceamento de carga. 
