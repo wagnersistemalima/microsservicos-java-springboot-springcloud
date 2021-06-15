@@ -58,6 +58,6 @@
 * Criar projeto trabalhador-eureka-server
 * Servidor onde os microsserviços, vão se registrar, utilizando portas aleatorias.
 * O servidor Eureka vai tratar de registrar todas as instancias 
-* Quando for preciso chamar um microserviço, a chamada vai ser apenas pelo nome, sem a necessidade de colocar localização de porta. Vai ser automatico
+* Quando for preciso chamar um microserviço, a chamada vai ser apenas pelo nome, sem a necessidade de colocar localização de porta. Vai ser automatico, com balanciamento de carga
  
 
