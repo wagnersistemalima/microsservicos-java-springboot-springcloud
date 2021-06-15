@@ -38,6 +38,8 @@
 
 * Feign: Uma maneira elegante de criar clientes HTTP em Java
 
+* Netflix Ribbon: É uma biblioteca em nuvem que fornece o balanceamento de carga do lado do cliente . Ele interage automaticamente com o Netflix Service Discovery (Eureka) porque é um membro da família Netflix. A faixa de opções fornece principalmente algoritmos de balanceamento de carga do lado do cliente. É um balanceador de carga do lado do cliente que fornece controle sobre o comportamento do cliente HTTP e TCP . O ponto importante é que quando usamos Feign , a fita também se aplica.
+
 * Discovery Server Eureka: Em uma arquitetura típica de microsserviço, temos muitos pequenos aplicativos implantados separadamente e eles geralmente precisam se comunicar uns com os outros. Especificamente, quando dizemos serviço ao cliente , queremos dizer um serviço que precisa fazer chamadas REST para algum outro serviço final.
 
 # Status do Projeto = Está em construção 🔧
