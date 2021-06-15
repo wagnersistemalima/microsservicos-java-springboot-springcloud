@@ -73,5 +73,6 @@
 		</dependency>
 
 ```
+![alt text](https://github.com/wagnersistemalima/microsservicos-java-springboot-springcloud/blob/main/images/dashboardEurekaServer.png)
  
 
