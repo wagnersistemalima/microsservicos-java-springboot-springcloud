@@ -53,3 +53,11 @@
 * 1.6 Feign
 * 1.7 Ribbon load balancing
 
+## Fase 2: Eureka server
+
+* Criar projeto trabalhador-eureka-server
+* Servidor onde os microsserviços, vão se registrar, utilizando portas aleatorias.
+* O servidor Eureka vai tratar de registrar todas as instancias 
+* Quando for preciso chamar um microserviço, a chamada vai ser apenas pelo nome, sem a necessidade de colocar localização de porta. Vai ser automatico
+ 
+
