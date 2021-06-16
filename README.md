@@ -34,7 +34,7 @@
 
 * JPA : biblioteca padrão de persistência de dados no java, baseado no mapeamento objeto relacional
 
-* API Gateway Zuul :  lida com todas as solicitações e executa o roteamento dinâmico de aplicativos de microsserviço. Funciona como porta de entrada para todos os pedidos. Também é conhecido como Edge Server. Zuul é construído para permitir roteamento dinâmico, monitoramento, resiliência e segurança.
+* API Gateway Zuul :  lida com todas as solicitações e executa o roteamento dinâmico de aplicativos de microsserviço. Funciona como porta de entrada para todos os pedidos. Também é conhecido como Edge Server. Zuul é construído para permitir roteamento dinâmico, monitoramento, resiliência e segurança. A partir de um ponto especifico o gateway será responsavel por encontrar a melhor instancia de cada microsserviços para atender a requisição, inclusive a mesma autenticação que for feita no gateway vai servir para acessar todos microsserviços.
 
 * Oauth : é um padrão aberto para autorização, comumente utilizado para permitir que os usuários da Internet possam fazer logon em sites de terceiros usando suas contas do Google, Facebook, Microsoft, Twitter, etc.—mas, sem expor suas senhas.
 
